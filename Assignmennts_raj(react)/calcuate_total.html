@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <table class="table table-bordered text-center" id="myTable" class="table">
+        <thead>
+            <tr>
+                <th scope="col">Product info</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price(SubTotal)</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Fortuna window Hradware-decorative Holdbacks -mocha</th>
+                <td><input class="form-control" type="number" name="one" id="one" onclick="multiply() 
+                    " /></td>
+                <td><input class="form-control" type="number" name="two" id="two" onclick="multiply()" /></td>
+
+                <td><input class="form-control" type="text" name="total" id="total" readonly/></td>
+
+            </tr>
+
+            <tr>
+                <th scope="row">F window Hradware-decorative Holdbacks -mocha</th>
+                <td><input class="form-control" type="number" name="one" id="one" onclick="multiply()" /></td>
+                <td><input class="form-control" type="number" name="two" id="two" onclick="multiply()" /></td>
+
+                <td><input class="form-control" type="text" name="total" id="total" readonly/></td>
+
+            </tr>
+         
+        </tbody>
+    </table>
+
+    <script>
+        function multiply(){
+            var one=document.getElementById("one").value;
+            var two=document.getElementById("two").value;
+            var total=parseFloat(one)*parseFloat(two);
+            document.getElementById("total").value=total;
+        }
+    </script>
+</body>
+
+</html>
