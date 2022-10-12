@@ -1,0 +1,107 @@
+1]What is JavaScript?
+=>JavaScript is the Programming Language for the Web. JavaScript can update and change both HTML and CSS. JavaScript can calculate, manipulate and validate data.
+
+2]What is the use of isNaN function?
+=>isNaN() returns true if a number is Not-a-Number. In other words: isNaN() converts the value to a number before testing it.
+
+3]What is Neegative Infinity?
+=>NEGATIVE_INFINITY is the same as the negative value of the global object's Infinity property.
+
+4]Which company developed JavaScript?
+=>Netscape
+
+5]What are undeclared and undefined variables?
+=>Undefined variable means a variable has been declared but it does not have a value. 
+Undeclared variable means that the variable does not exist in the program at all.
+
+6] Write the code for adding new elements dynamically? 
+=>
+document.createElement("<tagName>");  
+// Where <tagName> can be any HTML 
+// tagName like div, ul, button, etc.
+
+// newDiv element has been created
+For Eg: let newDiv = document.createElement("div");
+
+7]What is the difference between ViewState and SessionState?
+=> The basic difference between these two is that the ViewState is to manage state at the client’s end, making state management easy for end-user while SessionState manages state at the server’s end, making it easy to manage content from this end too.
+
+8]What is === operator? 
+=>The strict equality operator ( === ) checks whether its two operands are equal, returning a Boolean result.
+
+9]What are all the looping structures in JavaScript? 
+=>
+for
+for each
+while
+map
+
+10]How can you convert the string of any base to an integer in JavaScript?
+=>parseInt()
+
+11]What is the function of the delete operator?
+=>The delete operator removes a given property from an object. On successful deletion, it will return true , else false will be returned.
+
+12]What are all the types of Pop up boxes available in JavaScript?
+=>Alert box, Confirm box, and Prompt box.
+
+13]What is the use of Void (0)? 
+=>It is used to prevent any side effects caused while inserting an expression in a web page
+
+14]How can a page be forced to load another page in JavaScript? 
+=>
+<script>
+    window.location = <Path / URL>
+</script>
+
+15]What is Dis advantages of inner html?
+=>Event handlers attached to any DOM element are preserved.
+=>Replacement is done everywhere.
+=>It is not possible to append innerHTML.
+=>Breaks the document.
+=>Used for Cross-site Scripting.
+
+
+==================ADVANCE JAVASCRIPT=============================
+
+1] Write a program to Show an alert
+=> <script>
+  function showAlert() {
+    alert ("Hello world!");
+  }
+  </script> 
+
+2]
+What will be the result for these expressions?
+1. 5 > 4  TRUE
+2. "apple" > "pineapple" false
+3. "2" > "12" true
+4. undefined == null  True
+5. undefined === null False
+6. null == "\n0\n" False
+7. 7. null === +"\n0\n" False
+
+3]Will alert be shown?
+if ("0") { alert( 'Hello'); }
+
+=>Yes 
+Any string except an empty one (and "0" is not empty) becomes true in the logical context.
+
+4]What is the code below going to output? alert( null || 2 || undefined );
+=>The answer is 2, that’s the first truthy value.
+
+5]The following function returns true if the parameter age is greater than
+18. Otherwise it asks for a confirmation and returns its result:
+function
+checkAge(age)
+{
+if (age> 18) { return true; }
+else {
+// ...return confirm (‘did parents allow you?');
+ }
+ }
+● Replace Function Expressions with arrow functions in the code below:
+Function
+=>function checkAge(age) {
+  return (age > 18) ? true : confirm('Did parents allow you?');
+}
