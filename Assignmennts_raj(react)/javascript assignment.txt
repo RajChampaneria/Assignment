@@ -100,7 +100,7 @@ else {
 // ...return confirm (‘did parents allow you?');
  }
  }
-● Replace Function Expressions with arrow functions in the code below:
+Replace Function Expressions with arrow functions in the code below:
 Function
 =>function checkAge(age) {
   return (age > 18) ? true : confirm('Did parents allow you?');
